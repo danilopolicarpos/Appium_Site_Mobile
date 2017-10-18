@@ -50,11 +50,12 @@ deviceName = "iPhone 5"                   # nome do dispositivo
 
 Para inspecionar os elementos na plataforma podemos usar essas opções:
 - Web inspector
- ```
+```
 https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html
-
+```
+```
 https://webdesign.tutsplus.com/es/articles/quick-tip-using-web-inspector-to-debug-mobile-safari--webdesign-8787
- ```
+```
 - Browser Safari
 
 ## Executando seus testes
