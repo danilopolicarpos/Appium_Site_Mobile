@@ -3,8 +3,11 @@
 ## Appium com Ruby para Site Mobile
 
 O que é um site Mobile ou web app?
+
   É um site próprio para dispositivos móveis sejam eles smartphones ou tablets, que se adaptam a todos os dispositivos móveis independente do tamanho de tela, e não são visualizados em computadores desktop ou notebooks,ou seja o site mobile reconhece o tipo de dispositivo que o usuário está utilizando, e direciona para o site que  se adaptara em de uma melhor forma.
+
 Como funciona um site Mobile?
+
   O Site Mobile é um site diferente do site original, e exatamente um segundo site. Os arquivos do site como imagens e scripts podem até ter o mesmo caminho dependendo do caso, porém os arquivos html são outros, inclusive alguns sites mobiles ficam em subdomínio,como por exemplo o site da globo quando você acessa o site de um celular o site fica com o endereço “m.globo.com”.
 
 # Criando um projeto Appium_iOS utilizando Safari
