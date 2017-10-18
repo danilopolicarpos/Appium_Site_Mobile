@@ -17,4 +17,4 @@ Appium.promote_appium_methods Object
 wait = Selenium::WebDriver::Wait.new timeout: 5
 
 Before { $driver.start_driver }
-After { $driver.driver_quit }
+After  { $driver.driver_quit }
