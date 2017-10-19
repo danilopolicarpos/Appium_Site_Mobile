@@ -3,3 +3,5 @@ browserName = "Chrome"
 platformName = "Android"
 deviceName = 'Nexus_5_API_24'
 platformVersion = '7.0'
+chromedriverExecutable = '/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver'
+chromedriverVersion = '2.23'

@@ -77,3 +77,5 @@ https://webdesign.tutsplus.com/es/articles/quick-tip-using-web-inspector-to-debu
 
 ## Dúvidas
 
+versão instavel do chromedriver 2.23
+https://appium.readthedocs.io/en/stable/en/advanced-concepts/chromedriver/
