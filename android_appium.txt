@@ -2,4 +2,4 @@
 browserName = "Chrome"
 platformName = "Android"
 deviceName = 'Nexus_5_API_24'
-url = "https://www.google.com.br/"
+platformVersion = '7.0'
