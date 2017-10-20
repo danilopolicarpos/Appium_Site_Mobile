@@ -12,6 +12,8 @@ Como funciona um site Mobile?
 
 # Criando um projeto Appium_iOS utilizando Safari
 
+Dúvidas sobre configurações acesse <a href="https://github.com/danilopolicarpos/Appium">aqui</a>
+
 Abra o terminal e execute os comandos abaixo :
 ```
 cucumber --init    # criando estrutura do projeto
@@ -160,3 +162,4 @@ Para rodar os testes execute os comandos no terminal:
 
 versão instavel do chromedriver 2.23
 https://appium.readthedocs.io/en/stable/en/advanced-concepts/chromedriver/
+
