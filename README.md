@@ -138,6 +138,18 @@ Para inspecionar os elementos na plataforma podemos usar essas opções:
   exemplo: cucumber feature/<nomefeature> --format html --out reports.html
 
 
+## Executando os testes do repositorio
+
+Para rodar os testes execute os comandos no terminal:
+  ```
+  cucumber -p android                           # rodar os testes do chrome
+  cucumber -p android feature/<nomefeature>     # rodar feature especifica
+  cucumber -p ios                               # rodar os testes do safari
+  cucumber -p ios feature/<nomefeature>         # rodar feature especifica
+  ```
+  Atenção "Antes de rodar seus testes inicia o servidor do appium "
+
+
 ## Dúvidas
 
 ### > Chromedriver error “Chrome version must be >= 52”
