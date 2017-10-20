@@ -118,6 +118,10 @@ chromedriverVersion = '2.23'
 ## Inspecionando elementos
 
 Para inspecionar os elementos na plataforma podemos usar essas opções:
+- chrome://inspect
+```
+http://toolsqa.com/mobile-automation/appium/inspect-elements-of-mobile-web-application/
+```
 - Browser chrome
 
 ## Executando seus testes
