@@ -52,12 +52,12 @@ deviceName = "iPhone 5"                   # nome do dispositivo
 
 Para inspecionar os elementos na plataforma podemos usar essas opções:
 - Web inspector
-```
+
 <a href="https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html">link 1</a>
-```
-```
+
+
 <a href="https://webdesign.tutsplus.com/es/articles/quick-tip-using-web-inspector-to-debug-mobile-safari--webdesign-8787">Link 2</a>
-```
+
 - Browser Safari
 
 ## Executando seus testes
@@ -121,9 +121,9 @@ chromedriverVersion = '2.23'
 
 Para inspecionar os elementos na plataforma podemos usar essas opções:
 - chrome://inspect
-```
+
 <a href="http://toolsqa.com/mobile-automation/appium/inspect-elements-of-mobile-web-application/">Acesse o link</a>
-```
+
 - Browser chrome
 
 ## Executando seus testes
@@ -161,6 +161,6 @@ Para rodar os testes execute os comandos no terminal:
 ### > Chromedriver error “Chrome version must be >= 52”
 
 versão instavel do chromedriver 2.23
-<a href="https://appium.readthedocs.io/en/stable/en/advanced-concepts/chromedriver/">Acesse aqui</a>
+<a href="https://appium.readthedocs.io/en/stable/en/advanced-concepts/chromedriver/">acesse aqui</a>
 
 
