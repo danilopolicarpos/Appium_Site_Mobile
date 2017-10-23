@@ -52,10 +52,10 @@ deviceName = "iPhone 5"                   # nome do dispositivo
 
 Para inspecionar os elementos na plataforma podemos usar essas opções:
 - Web inspector
-Sobre web inspector acesse <a href="https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html">aqui</a>
 
-Dicas de como usar web inspector acesse 
-<a href="https://webdesign.tutsplus.com/es/articles/quick-tip-using-web-inspector-to-debug-mobile-safari--webdesign-8787">aqui</a>
+    Sobre web inspector acesse <a href="https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html">aqui</a>
+
+    Dicas de como usar web inspector acesse <a href="https://webdesign.tutsplus.com/es/articles/quick-tip-using-web-inspector-to-debug-mobile-safari--webdesign-8787">aqui</a>
 
 - Browser Safari
 
@@ -121,7 +121,7 @@ chromedriverVersion = '2.23'
 Para inspecionar os elementos na plataforma podemos usar essas opções:
 - chrome://inspect
 
-Dicas de como usar chrome inspect acesse <a href="http://toolsqa.com/mobile-automation/appium/inspect-elements-of-mobile-web-application/">aqui</a>
+    Dicas de como usar chrome inspect acesse <a href="http://toolsqa.com/mobile-automation/appium/inspect-elements-of-mobile-web-application/">aqui</a>
 
 - Browser chrome
 
