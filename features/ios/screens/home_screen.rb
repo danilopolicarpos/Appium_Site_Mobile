@@ -8,16 +8,15 @@ class Home
 
   def homepage
     driver.get('http://www.google.com')
-    wait { find_element(id: @layout_name) }
+    wait_for_element(id: @layout_name)
   end
 
   def realizar_busca
     wait { find_element(id: @busca).send_keys('terra') }
-    wait { find_element(id: @btn_buscar).click }
+    wait_for_click(id: @btn_buscar)
   end
 
   def resultado_busca
-    resultado = wait { find_element(id: @resultado_busca).displayed? }
-    raise 'Não encontrou resultado da busca' if resultado != true
+    wait_for_element(id: @resultado_busca) 
   end
 end
