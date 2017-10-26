@@ -1,0 +1,839 @@
+[Appium] Welcome to Appium v1.7.1
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"platformName":"Android","deviceName":"Nexus_5_API_24","platformVersion":"7.0","chromedriverExecutable":"/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver","chromedriverVersion":"2.23"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"platformName":"Android","deviceName":"Nexus_5_API_24","platformVersion":"7.0","chromedriverExecutable":"/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver","chromedriverVersion":"2.23"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509038048342 (15:14:08 GMT-0200 (-02))
+[Appium] Creating new AndroidDriver (v1.28.1) session
+[Appium] Capabilities:
+[Appium]   browserName: 'Chrome'
+[Appium]   version: ''
+[Appium]   platform: 'ANY'
+[Appium]   javascriptEnabled: true
+[Appium]   cssSelectorsEnabled: true
+[Appium]   takesScreenshot: true
+[Appium]   nativeEvents: false
+[Appium]   rotatable: false
+[Appium]   platformName: 'Android'
+[Appium]   deviceName: 'Nexus_5_API_24'
+[Appium]   platformVersion: '7.0'
+[Appium]   chromedriverExecutable: '/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver'
+[Appium]   chromedriverVersion: '2.23'
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: version, platform, javascriptEnabled, cssSelectorsEnabled, takesScreenshot, nativeEvents, rotatable, chromedriverVersion.
+[BaseDriver] Session created with session id: bf12a8cc-0387-4507-b406-77ab0ef3d300
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_111
+[AndroidDriver] We're going to run a Chrome-based session
+[AndroidDriver] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[AndroidDriver] Looking for a device with Android '7.0'
+[debug] [ADB] Setting device id to emulator-5554
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 7.0
+[AndroidDriver] Using device: emulator-5554
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to emulator-5554
+[AndroidDriver] App file was not listed, instead we're going to run com.android.chrome directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","list","packages","com.android.chrome"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Uninstalling and re-installing 'io.appium.settings'
+[debug] [ADB] Uninstalling io.appium.settings
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","io.appium.settings"]
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","uninstall","io.appium.settings"]
+[debug] [ADB] ADB command output: Success
+[ADB] io.appium.settings was successfully uninstalled
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is not installed
+[debug] [ADB] App '/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/app/build/outputs/apk/settings_apk-debug.apk' not installed. Installing
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/app/build/outputs/apk/settings_apk-debug.apk"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Current device property 'ro.build.version.sdk': 24
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","package","io.appium.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","dump","io.appium.settings"]
+[debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.READ_PHONE_STATE,;,pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;,pm,grant,io.appium.settings,android.permission.SET_ANIMATION_SCALE,;
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","grant","io.appium.settings","android.permission.READ_PHONE_STATE",";","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";","pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","appops","set","io.appium.settings","android:mock_location","allow"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[debug] [ADB] Application '/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk' already installed. Continuing.
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 7.0
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","wm","size"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.model"]
+[debug] [ADB] Current device property 'ro.product.model': Android SDK built for x86_64
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.manufacturer"]
+[debug] [ADB] Current device property 'ro.product.manufacturer': unknown
+[AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidDriver] Running fast reset (stop and clear)
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","com.android.chrome"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","clear","com.android.chrome"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.chrome","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[AndroidDriver] Starting a chrome-based browser session
+[debug] [AndroidDriver] A port was not given, using random port: 8000
+[debug] [Chromedriver] Changed state to 'starting'
+[Chromedriver] Set chromedriver binary as: /Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver
+[debug] [Chromedriver] Killing any old chromedrivers, running: pkill -15 -f "/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver.*--port=8000"
+[Chromedriver] No old chromedrivers seemed to exist
+[debug] [Chromedriver] Cleaning any old adb forwarded port socket connections
+[debug] [ADB] List forwarding ports
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","forward","--list"]
+[Chromedriver] Spawning chromedriver with: /Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver --url-base=wd/hub --port=8000 --adb-port=5037 --verbose
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"alpha\"},\"os\":{\"arch\":\"x86_64\",\"name\":\"Mac OS X\",\"version\":\"10.12.6\"}}}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"emulator-5554"}}}
+[debug] [Chromedriver] Webview version: 'Chrome/51.0.2704.90'
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.23.409710 (0c4084804897ac45b5ff65a690ec6583b97225c0)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"version":"51.0.2704.90","webStorageEnabled":true}}
+[debug] [Chromedriver] Changed state to 'online'
+[Appium] New AndroidDriver session created successfully, session bf12a8cc-0387-4507-b406-77ab0ef3d300 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1509038064119 (15:14:24 GMT-0200 (-02))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"ANY","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"platformName":"Android","deviceName":"Nexus_5_API_24","platformVersion":"7.0","chromedriverExecutable":"/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver","chromedriverVersion":"2.23"},"browserName":"Chrome","version":"","cssSelectorsEnabled":true,"nativeEvents":false,"rotatable":false,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.0","chromedriverExecutable":"/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver","chromedriverVersion":"2.23","deviceUDID":"emulator-5554","deviceScreenSize":"1080x1920","deviceModel":"Android SDK built for x86_64","deviceManufacturer":"unknown"}
+[HTTP] <-- POST /wd/hub/session 200 15785 ms - 1083 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.1","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 40 ms - 83 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/timeouts/implicit_wait {"ms":0}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/timeouts/implicit_wait] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/timeouts/implicit_wait] with body: {"ms":0}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":null}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/timeouts/implicit_wait 200 14 ms - 76 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/url {"url":"http://www.google.com"}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/url] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/url] with body: {"url":"http://www.google.com"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":null}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/url 200 3292 ms - 76 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element {"using":"id","value":"hplogo"}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element] with body: {"using":"id","value":"hplogo"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":{"ELEMENT":"0.7352270776546233-1"}}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element 200 188 ms - 106 
+[HTTP] --> GET /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-1/displayed {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-1/displayed] to [GET http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element/0.7352270776546233-1/displayed] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"278de5ec1f2842c8911a5b53d31dc4a8\",\"status\":0,\"value\":true}"
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- GET /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-1/displayed 200 76 ms - 76 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element {"using":"id","value":"lst-ib"}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element] with body: {"using":"id","value":"lst-ib"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":{"ELEMENT":"0.7352270776546233-2"}}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element 200 52 ms - 106 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-2/value {"value":["terra"]}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-2/value] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element/0.7352270776546233-2/value] with body: {"value":["terra"]}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":null}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-2/value 200 549 ms - 76 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element {"using":"id","value":"tsbb"}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element] with body: {"using":"id","value":"tsbb"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":{"ELEMENT":"0.7352270776546233-3"}}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element 200 301 ms - 106 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-3/click {"{}":""}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-3/click] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element/0.7352270776546233-3/click] with body: {"{}":""}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":null}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.7352270776546233-3/click 200 6884 ms - 76 
+[HTTP] --> POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element {"using":"id","value":"gsr"}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element] to [POST http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element] with body: {"using":"id","value":"gsr"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"278de5ec1f2842c8911a5b53d31dc4a8","status":0,"value":{"ELEMENT":"0.32230056817754815-1"}}
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- POST /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element 200 141 ms - 107 
+[HTTP] --> GET /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.32230056817754815-1/displayed {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.32230056817754815-1/displayed] to [GET http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8/element/0.32230056817754815-1/displayed] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"278de5ec1f2842c8911a5b53d31dc4a8\",\"status\":0,\"value\":true}"
+[JSONWP Proxy] Replacing sessionId 278de5ec1f2842c8911a5b53d31dc4a8 with bf12a8cc-0387-4507-b406-77ab0ef3d300
+[HTTP] <-- GET /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300/element/0.32230056817754815-1/displayed 200 42 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["bf12a8cc-0387-4507-b406-77ab0ef3d300"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509038075765 (15:14:35 GMT-0200 (-02))
+[Appium] Removing session bf12a8cc-0387-4507-b406-77ab0ef3d300 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/278de5ec1f2842c8911a5b53d31dc4a8] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"278de5ec1f2842c8911a5b53d31dc4a8\",\"status\":0,\"value\":null}"
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","input","keyevent",3]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/Danilo.Policarpo/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","io.appium.unlock"]
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509038077884 (15:14:37 GMT-0200 (-02))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/bf12a8cc-0387-4507-b406-77ab0ef3d300 200 2124 ms - 76 
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Safari","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"platformName":"iOS","platformVersion":"10.3","deviceName":"iPhone 5"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Safari","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":true,"nativeEvents":false,"rotatable":false,"platformName":"iOS","platformVersion":"10.3","deviceName":"iPhone 5"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509038465692 (15:21:05 GMT-0200 (-02))
+[Appium] Requested iOS support with version >= 10, using XCUITest driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+[Appium] Creating new XCUITestDriver (v2.51.1) session
+[Appium] Capabilities:
+[Appium]   browserName: 'Safari'
+[Appium]   version: ''
+[Appium]   platform: 'ANY'
+[Appium]   javascriptEnabled: true
+[Appium]   cssSelectorsEnabled: true
+[Appium]   takesScreenshot: true
+[Appium]   nativeEvents: false
+[Appium]   rotatable: false
+[Appium]   platformName: 'iOS'
+[Appium]   platformVersion: '10.3'
+[Appium]   deviceName: 'iPhone 5'
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: version, platform, javascriptEnabled, cssSelectorsEnabled, takesScreenshot, nativeEvents, rotatable.
+[BaseDriver] Session created with session id: b5b030e5-50e7-4f00-a5a8-14d39c16bb29
+[debug] [XCUITest] Xcode version set to '8.3.1' (tools v9.0.1.0.1.1506734476)
+[debug] [XCUITest] iOS SDK Version set to '10.3'
+[debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1509038465866 (15:21:05 GMT-0200 (-02))
+[iOSSim] Constructing iOS simulator for Xcode version 8.3.1 with udid '8FB4F3C7-F7AA-4C85-9958-0A35680A894C'
+[XCUITest] Determining device to run tests on: udid: '8FB4F3C7-F7AA-4C85-9958-0A35680A894C', real device: false
+[XCUITest] Safari test requested
+[debug] [BaseDriver] Event 'appConfigured' logged at 1509038466112 (15:21:06 GMT-0200 (-02))
+[debug] [BaseDriver] Event 'resetStarted' logged at 1509038466112 (15:21:06 GMT-0200 (-02))
+[debug] [iOSSim] Cleaning mobile safari data files
+[debug] [iOSSim] Checking whether simulator has been run before
+[debug] [iOSSim] Simulator has been run before
+[debug] [iOSSim] Checking whether simulator has been run before
+[debug] [iOSSim] Simulator has been run before
+[debug] [iOSSim] Building bundle path map
+[debug] [BaseDriver] Event 'resetComplete' logged at 1509038466508 (15:21:06 GMT-0200 (-02))
+[debug] [iOSLog] Starting iOS 10.3 simulator log capture
+[debug] [iOSLog] System log path: /Users/Danilo.Policarpo/Library/Logs/CoreSimulator/8FB4F3C7-F7AA-4C85-9958-0A35680A894C/system.log
+[debug] [BaseDriver] Event 'logCaptureStarted' logged at 1509038466539 (15:21:06 GMT-0200 (-02))
+[XCUITest] Setting up simulator
+[debug] [iOS] No reason to set locale
+[debug] [iOS] No iOS / app preferences to set
+[debug] [iOSSim] The count of running Simulator UI client instances is 1
+[iOSSim] Both Simulator with UDID 8FB4F3C7-F7AA-4C85-9958-0A35680A894C and the UI client are currently running
+[debug] [BaseDriver] Event 'simStarted' logged at 1509038467118 (15:21:07 GMT-0200 (-02))
+[XCUITest] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[XCUITest] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj'
+[debug] [XCUITest] Capability 'useNewWDA' set to false, so trying to reuse currently running WDA instance at 'http://localhost:8100/'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [XCUITest] WDA is not listening at 'http://localhost:8100/'. Rebuilding...
+[debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1509038467136 (15:21:07 GMT-0200 (-02))
+[XCUITest] Launching WebDriverAgent on the device
+[debug] [XCUITest] Carthage found: '/usr/local/bin/carthage'
+[debug] [XCUITest] Killing running processes 'xcodebuild.*8FB4F3C7-F7AA-4C85-9958-0A35680A894C, iproxy 8100, 8FB4F3C7-F7AA-4C85-9958-0A35680A894C.*XCTRunner' for the device 8FB4F3C7-F7AA-4C85-9958-0A35680A894C...
+[debug] [XCUITest] 'pgrep -nif xcodebuild.*8FB4F3C7-F7AA-4C85-9958-0A35680A894C' didn't detect any matching processes. Return code: 1
+[debug] [XCUITest] 'pgrep -nif iproxy 8100' didn't detect any matching processes. Return code: 1
+[debug] [XCUITest] 'pgrep -nif 8FB4F3C7-F7AA-4C85-9958-0A35680A894C.*XCTRunner' didn't detect any matching processes. Return code: 1
+[debug] [XCUITest] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=8FB4F3C7-F7AA-4C85-9958-0A35680A894C IPHONEOS_DEPLOYMENT_TARGET=10.3' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[debug] [XCUITest] Output from xcodebuild will not be logged. To see xcode logging, use 'showXcodeLog' desired capability
+[debug] [XCUITest] Waiting up to 60000ms for WebDriverAgent to start
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [XCUITest] Log file for xcodebuild test: /Users/Danilo.Policarpo/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/D90BC555-1999-400C-83E3-E8961EAD12ED/Session-WebDriverAgentRunner-2017-10-26_152109-HwrUwF.log
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"8367FD67-0C6A-4E3D-B520-3AD3E3BBF4D6\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3\"\n    },\n    \"ios\" : {\n      \"ip\" : \"10.200.11.37\",\n      \"simulatorVersion\" : \"10.3\"\n    },\n    \"build\" : {\n      \"time\" : \"Oct 11 2017 13:33:07\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [XCUITest] WebDriverAgent running on ip '10.200.11.37'
+[debug] [XCUITest] WebDriverAgent successfully started after 10743ms
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1509038477967 (15:21:17 GMT-0200 (-02))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://0.0.0.0:4723/welcome"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[HTTP] --> GET /welcome {}
+[debug] [HTTP] Sending welcome response with params: {"message":"Let's browse!"}
+[HTTP] <-- GET /welcome 200 8 ms - 124 
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"9DDC1043-CFCB-42D9-91F8-0AD988F97FD9","value":{"sessionId":"9DDC1043-CFCB-42D9-91F8-0AD988F97FD9","capabilities":{"browserName":"Safari","device":"iphone","CFBundleIdentifier":"com.apple.mobilesafari","sdkVersion":"10.3"}},"status":0}
+[debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1509038481903 (15:21:21 GMT-0200 (-02))
+[XCUITest] Setting '555' permissions to '/Users/Danilo.Policarpo/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [BaseDriver] Event 'wdaPermsAdjusted' logged at 1509038481970 (15:21:21 GMT-0200 (-02))
+[debug] [BaseDriver] Event 'wdaStarted' logged at 1509038481971 (15:21:21 GMT-0200 (-02))
+[debug] [XCUITest] Setting initial orientation to 'PORTRAIT'
+[debug] [JSONWP Proxy] Proxying [POST /orientation] to [POST http://localhost:8100/session/9DDC1043-CFCB-42D9-91F8-0AD988F97FD9/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"9DDC1043-CFCB-42D9-91F8-0AD988F97FD9","value":{},"status":0}
+[debug] [BaseDriver] Event 'orientationSet' logged at 1509038483227 (15:21:23 GMT-0200 (-02))
+[debug] [XCUITest] Waiting for initial webview
+[debug] [iOS] Navigating to most recently opened webview
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://0.0.0.0:4723/welcome')
+[debug] [RemoteDebugger] useNewSafari --> false
+[debug] [RemoteDebugger] Debugger socket connected to ::1:27753
+[debug] [RemoteDebugger] Sending connection key request
+[debug] [RemoteDebugger] Sending '_rpc_reportIdentifier:' message to remote debugger
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_reportSetup:","__argument":{"WIRSimulatorNameKey":"iPhone","WIRSimulatorProductVersionKey":"10.3","WIRSimulatorBuildKey":"14E269"}}'
+[debug] [RemoteDebugger] Received response from socket send: '["iPhone","14E269","10.3"]'
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_reportConnectedApplicationList:","__argument":{"WIRApplicationDictionaryKey":{"PID:90295":{"WIRApplicationBundleIdentifierKey":"com.apple.mobilesafari","WIRApplicationIdentifierKey":"PID:90295","WIRIsApplicationProxyKey":false,"WIRRemoteAutomationEnabledKey":false,"WIRIsApplicationReadyKey":true,"WIRApplicationNameKey":"Safari","WIRIsApplicationActiveKey":1},"PID:90300":{"WIRApplicationBundleIdentifierKey":"com.apple.WebKit.WebContent","WIRApplicationIdentifierKey":"PID:90300","WIRIsApplicationProxyKey":true,"WIRRemoteAutomationEnabledKey":false,"WIRIsApplicationReadyKey":true,"WIRApplicationNameKey":"com.apple.WebKit.WebContent","WIRIsApplicationActiveKey":1,"WIRHostApplicationIdentifierKey":"PID:90295"}}}}'
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_reportConnectedDriverList:","__argument":{"WIRDriverDictionaryKey":{}}}'
+[debug] [RemoteDebugger] Notified of connected drivers: {}.
+[debug] [RemoteDebugger] Connected to application
+[debug] [RemoteDebugger] Sim name: iPhone
+[debug] [RemoteDebugger] Sim build: 14E269
+[debug] [RemoteDebugger] Sim platform version: 10.3
+[debug] [RemoteDebugger] Selecting application
+[debug] [RemoteDebugger] Found app id key 'PID:90295' for bundle 'com.apple.mobilesafari'
+[debug] [RemoteDebugger] Found separate bundleId 'com.apple.WebKit.WebContent' acting as proxy for 'com.apple.mobilesafari', with app id 'PID:90300'
+[debug] [RemoteDebugger] Trying out the possible app ids: PID:90300
+[debug] [RemoteDebugger] Selecting app PID:90300 (try #1 of 20)
+[debug] [RemoteDebugger] Sending '_rpc_forwardGetListing:' message to remote debugger
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRPageIdentifierKey":1,"WIRURLKey":"http://0.0.0.0:4723/welcome","WIRTitleKey":"Appium/welcome","WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Received response from socket send: '["PID:90300",{"1":{"WIRPageIdentifierKey":1,"WI...'
+[debug] [RemoteDebugger] Received page change notice for app 'PID:90300' but listening for 'null'. Ignoring.
+[debug] [RemoteDebugger] Received altered app id, updating from 'null' to 'PID:90300'
+[debug] [RemoteDebugger] Finally selecting app PID:90300: [{"id":1,"title":"Appium/welcome","url":"http://0.0.0.0:4723/welcome","isKey":false}]
+[debug] [iOS] Picking webview 'WEBVIEW_90300.1'
+[debug] [iOS] Attempting to set context to 'WEBVIEW_90300.1'
+[debug] [RemoteDebugger] Selecting page '1' on app 'PID:90300' and forwarding socket setup
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketSetup:' message to remote debugger
+[debug] [RemoteDebugger] Sender key set
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{}'
+[debug] [RemoteDebugger] Original command: enablePage
+[debug] [RemoteDebugger] Enabled activity on page
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Unregistering from page readiness notifications
+[debug] [BaseDriver] Event 'initialWebviewNavigated' logged at 1509038483272 (15:21:23 GMT-0200 (-02))
+[Appium] New XCUITestDriver session created successfully, session b5b030e5-50e7-4f00-a5a8-14d39c16bb29 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1509038483272 (15:21:23 GMT-0200 (-02))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"Safari","platform":"ANY","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"version":"","cssSelectorsEnabled":true,"nativeEvents":false,"rotatable":false,"platformName":"iOS","platformVersion":"10.3","deviceName":"iPhone 5","udid":"8FB4F3C7-F7AA-4C85-9958-0A35680A894C"}
+[HTTP] <-- POST /wd/hub/session 200 17588 ms - 470 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.1","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 28 ms - 83 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/timeouts/implicit_wait {"ms":0}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'implicitWait'
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/timeouts/implicit_wait 200 5 ms - 76 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/url {"url":"http://www.google.com"}
+[debug] [MJSONWP] Calling AppiumDriver.setUrl() with args: ["http://www.google.com","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'setUrl'
+[debug] [iOS] Attempting to set url 'http://www.google.com'
+[debug] [RemoteDebugger] Navigating to new URL: http://www.google.com
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{}'
+[debug] [RemoteDebugger] Original command: setUrl
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRPageIdentifierKey":1,"WIRURLKey":"http://0.0.0.0:4723/welcome","WIRTitleKey":"Appium/welcome","WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Page changed: {"1":{"WIRPageIdentifierKey":1,"WIRURLKey":"http://0.0.0.0:4723/welcome","WIRTitleKey":"Appium/welcome","WIRTypeKey":"WIRTypeWeb"}}
+[debug] [iOS] Remote debugger notified us of a new page listing: {"appIdKey":"90300","pageArray":[{"id":1,"title":"Appium/welcome","url":"http://0.0.0.0:4723/welcome","isKey":false}]}
+[debug] [iOS] No key id found. Choosing first id from page array
+[debug] [iOS] Checking if page needs to load
+[debug] [iOS] Page load needed. Loading.
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Page is ready
+[debug] [iOS] New page listing is same as old, doing nothing
+[debug] [iOS] Redirected from 'http://www.google.com' to 'http://0.0.0.0:4723/welcome'
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Frame navigated, unloading page
+[debug] [RemoteDebugger] No frame navigation callback set.
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","WIRTitleKey":"Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Page changed: {"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","WIRTitleKey":"Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}
+[debug] [iOS] Remote debugger notified us of a new page listing: {"appIdKey":"90300","pageArray":[{"id":1,"title":"Google","url":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","isKey":true}]}
+[debug] [iOS] Checking if page needs to load
+[debug] [iOS] Page load needed. Loading.
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationUpdated:","__argument":{"WIRApplicationBundleIdentifierKey":"com.apple.WebKit.WebContent","WIRApplicationIdentifierKey":"PID:90300","WIRIsApplicationProxyKey":true,"WIRRemoteAutomationEnabledKey":false,"WIRIsApplicationReadyKey":true,"WIRApplicationNameKey":"com.apple.WebKit.WebContent","WIRIsApplicationActiveKey":1,"WIRHostApplicationIdentifierKey":"PID:90295"}}'
+[debug] [RemoteDebugger] Notified that application 'PID:90300' has been updated.
+[debug] [RemoteDebugger] Current applications available:
+[debug] [RemoteDebugger] Application: 'PID:90295'
+[debug] [RemoteDebugger]     id: "PID:90295"
+[debug] [RemoteDebugger]     isProxy: false
+[debug] [RemoteDebugger]     name: "Safari"
+[debug] [RemoteDebugger]     bundleId: "com.apple.mobilesafari"
+[debug] [RemoteDebugger]     hostId: undefined
+[debug] [RemoteDebugger]     isActive: 1
+[debug] [RemoteDebugger]     isAutomationEnabled: false
+[debug] [RemoteDebugger] Application: 'PID:90300'
+[debug] [RemoteDebugger]     id: "PID:90300"
+[debug] [RemoteDebugger]     isProxy: true
+[debug] [RemoteDebugger]     name: "com.apple.WebKit.WebContent"
+[debug] [RemoteDebugger]     bundleId: "com.apple.WebKit.WebContent"
+[debug] [RemoteDebugger]     hostId: "PID:90295"
+[debug] [RemoteDebugger]     isActive: 1
+[debug] [RemoteDebugger]     isAutomationEnabled: false
+[debug] [RemoteDebugger]     pageDict: [{"id":1,"title":"Google","url":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","isKey":true}]
+[debug] [RemoteDebugger] Waiting for frame navigated message...
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","WIRTitleKey":"Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Page changed: {"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","WIRTitleKey":"Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}
+[debug] [iOS] Remote debugger notified us of a new page listing: {"appIdKey":"90300","pageArray":[{"id":1,"title":"Google","url":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","isKey":true}]}
+[debug] [iOS] Checking if page needs to load
+[debug] [iOS] Page load needed. Loading.
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'interactive'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "interactive"
+[debug] [RemoteDebugger] Page was not ready, retrying
+[debug] [RemoteDebugger] Frame navigated in 0.505 sec from source: timeout
+[debug] [RemoteDebugger] Waiting for dom...
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","WIRTitleKey":"Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Page changed: {"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","WIRTitleKey":"Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}
+[debug] [iOS] Remote debugger notified us of a new page listing: {"appIdKey":"90300","pageArray":[{"id":1,"title":"Google","url":"https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg","isKey":true}]}
+[debug] [iOS] Checking if page needs to load
+[debug] [iOS] Page load needed. Loading.
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Page is ready
+[debug] [iOS] New page listing is same as old, doing nothing
+[debug] [iOS] Redirected from 'http://0.0.0.0:4723/welcome' to 'https://www.google.com.br/?gws_rd=cr,ssl&dcr=0&ei=kxnyWZ6oG8amwASjqbfQDg'
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Page is ready
+[debug] [iOS] New page listing is same as old, doing nothing
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Page is ready
+[debug] [MJSONWP] Responding to client with driver.setUrl() result: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/url 200 2031 ms - 76 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"hplogo"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","hplogo","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":{"ELEMENT":":wdc:1509038485...'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: {"ELEMENT":":wdc:1509038485396"}
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5000"}
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 200 52 ms - 90 
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Page is ready
+[HTTP] --> GET /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5000/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["5000","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'elementDisplayed'
+[debug] [RemoteDebugger] Executing 'is_displayed' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var h,l=this;func...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":true}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'is_displayed' execution: true
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'complete'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5000/displayed 200 50 ms - 76 
+[debug] [RemoteDebugger] readyState was "complete"
+[debug] [RemoteDebugger] Page is ready
+[debug] [iOS] New page listing is same as old, doing nothing
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"lst-ib"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","lst-ib","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":{"ELEMENT":":wdc:1509038485...'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: {"ELEMENT":":wdc:1509038485397"}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5001"}
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 200 17 ms - 90 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5001/value {"value":["terra"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["terra"],"5001","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'setValue'
+[debug] [RemoteDebugger] Executing 'click' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var h,aa=this;fun...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'click' execution: null
+[debug] [RemoteDebugger] Executing 'type' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var h,aa=this;fun...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'type' execution: null
+[debug] [MJSONWP] Responding to client with driver.setValue() result: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5001/value 200 262 ms - 76 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"tsbb"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","tsbb","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":{"ELEMENT":":wdc:1509038485...'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: {"ELEMENT":":wdc:1509038485398"}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5002"}
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 200 16 ms - 90 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5002/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["5002","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'click'
+[debug] [RemoteDebugger] Executing 'click' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var h,aa=this;fun...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'click' execution: null
+[debug] [MJSONWP] Responding to client with driver.click() result: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5002/click 200 35 ms - 76 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"center_col"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","center_col","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: null
+[debug] [RemoteDebugger] Received applicationSentData response
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 500 65 ms - 164 
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Frame navigated, unloading page
+[debug] [RemoteDebugger] Frame navigated in 1.834 sec from source: remote-debugger
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/search?dcr=0&source=hp&ei=kxnyWdDJM8KEwgSBi5mADg&sjs=3&q=terra&oq=terra&gs_l=mobile-gws-hp.12...1489.1503.0.1558.6.1.0.1.1.0.0.0..0.0....0...1.1.64.mobile-gws-hp..5.0.0.0...0.TXjvxJS80Ww","WIRTitleKey":"terra - Pesquisa Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Page changed: {"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/search?dcr=0&source=hp&ei=kxnyWdDJM8KEwgSBi5mADg&sjs=3&q=terra&oq=terra&gs_l=mobile-gws-hp.12...1489.1503.0.1558.6.1.0.1.1.0.0.0..0.0....0...1.1.64.mobile-gws-hp..5.0.0.0...0.TXjvxJS80Ww","WIRTitleKey":"terra - Pesquisa Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}
+[debug] [iOS] Remote debugger notified us of a new page listing: {"appIdKey":"90300","pageArray":[{"id":1,"title":"terra - Pesquisa Google","url":"https://www.google.com.br/search?dcr=0&source=hp&ei=kxnyWdDJM8KEwgSBi5mADg&sjs=3&q=terra&oq=terra&gs_l=mobile-gws-hp.12...1489.1503.0.1558.6.1.0.1.1.0.0.0..0.0....0...1.1.64.mobile-gws-hp..5.0.0.0...0.TXjvxJS80Ww","isKey":true}]}
+[debug] [iOS] Checking if page needs to load
+[debug] [iOS] Page load needed. Loading.
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"center_col"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","center_col","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 500 24 ms - 164 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"center_col"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","center_col","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 500 7 ms - 164 
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"center_col"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","center_col","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 500 8 ms - 164 
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'loading'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "loading"
+[debug] [RemoteDebugger] Page was not ready, retrying
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"center_col"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","center_col","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":null}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: null
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 500 8 ms - 164 
+[debug] [RemoteDebugger] Received applicationSentData response
+[HTTP] --> POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element {"using":"id","value":"center_col"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","center_col","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [RemoteDebugger] Executing 'find_element' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var k=this;functi...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":{"ELEMENT":":wdc:1509038487...'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'find_element' execution: {"ELEMENT":":wdc:1509038487127"}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5003"}
+[HTTP] <-- POST /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element 200 10 ms - 90 
+[HTTP] --> GET /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5003/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["5003","b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [XCUITest] Executing command 'elementDisplayed'
+[debug] [RemoteDebugger] Executing 'is_displayed' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){var h,l=this;func...
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: '{"status":0,"value":true}'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] Received result for atom 'is_displayed' execution: true
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29/element/5003/displayed 200 50 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["b5b030e5-50e7-4f00-a5a8-14d39c16bb29"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509038487184 (15:21:27 GMT-0200 (-02))
+[Appium] Removing session b5b030e5-50e7-4f00-a5a8-14d39c16bb29 from our master session list
+[debug] [JSONWP Proxy] Proxying [DELETE /session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29] to [DELETE http://localhost:8100/session/9DDC1043-CFCB-42D9-91F8-0AD988F97FD9] with no body
+[debug] [RemoteDebugger] Checking document readyState
+[debug] [RemoteDebugger] Sending javascript command (function (){ return document.readyState; })()
+[debug] [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to remote debugger
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Found data handler for response
+[debug] [RemoteDebugger] Received data response from socket send: 'interactive'
+[debug] [RemoteDebugger] Original command: sendJSCommand
+[debug] [RemoteDebugger] readyState was "interactive"
+[debug] [RemoteDebugger] Page was not ready, retrying
+[debug] [RemoteDebugger] Received applicationSentData response
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationSentListing:","__argument":{"WIRApplicationIdentifierKey":"PID:90300","WIRListingKey":{"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/search?dcr=0&source=hp&ei=kxnyWdDJM8KEwgSBi5mADg&sjs=3&q=terra&oq=terra&gs_l=mobile-gws-hp.12...1489.1503.0.1558.6.1.0.1.1.0.0.0..0.0....0...1.1.64.mobile-gws-hp..5.0.0.0...0.TXjvxJS80Ww","WIRTitleKey":"terra - Pesquisa Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}}}'
+[debug] [RemoteDebugger] Page changed: {"1":{"WIRConnectionIdentifierKey":"e2a9e779-fbee-418a-af30-0d5a96ed20ac","WIRURLKey":"https://www.google.com.br/search?dcr=0&source=hp&ei=kxnyWdDJM8KEwgSBi5mADg&sjs=3&q=terra&oq=terra&gs_l=mobile-gws-hp.12...1489.1503.0.1558.6.1.0.1.1.0.0.0..0.0....0...1.1.64.mobile-gws-hp..5.0.0.0...0.TXjvxJS80Ww","WIRTitleKey":"terra - Pesquisa Google","WIRPageIdentifierKey":1,"WIRTypeKey":"WIRTypeWeb"}}
+[debug] [iOS] Remote debugger notified us of a new page listing: {"appIdKey":"90300","pageArray":[{"id":1,"title":"terra - Pesquisa Google","url":"https://www.google.com.br/search?dcr=0&source=hp&ei=kxnyWdDJM8KEwgSBi5mADg&sjs=3&q=terra&oq=terra&gs_l=mobile-gws-hp.12...1489.1503.0.1558.6.1.0.1.1.0.0.0..0.0....0...1.1.64.mobile-gws-hp..5.0.0.0...0.TXjvxJS80Ww","isKey":true}]}
+[debug] [iOS] Checking if page needs to load
+[debug] [iOS] Page load needed. Loading.
+[debug] [RemoteDebugger] Page loaded, verifying whether ready
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationDisconnected:","__argument":{"WIRApplicationBundleIdentifierKey":"com.apple.mobilesafari","WIRApplicationIdentifierKey":"PID:90295","WIRIsApplicationProxyKey":false,"WIRRemoteAutomationEnabledKey":false,"WIRIsApplicationReadyKey":true,"WIRApplicationNameKey":"Safari","WIRIsApplicationActiveKey":1}}'
+[debug] [RemoteDebugger] Application 'PID:90295' disconnected. Removing from app dictionary.
+[debug] [RemoteDebugger] Current app is PID:90300
+[debug] [RemoteDebugger] Receiving data from remote debugger: '{"__selector":"_rpc_applicationDisconnected:","__argument":{"WIRApplicationBundleIdentifierKey":"com.apple.WebKit.WebContent","WIRApplicationIdentifierKey":"PID:90300","WIRIsApplicationProxyKey":true,"WIRRemoteAutomationEnabledKey":false,"WIRIsApplicationReadyKey":true,"WIRApplicationNameKey":"com.apple.WebKit.WebContent","WIRIsApplicationActiveKey":1,"WIRHostApplicationIdentifierKey":"PID:90295"}}'
+[debug] [RemoteDebugger] Application 'PID:90300' disconnected. Removing from app dictionary.
+[debug] [RemoteDebugger] Current app is PID:90300
+[debug] [RemoteDebugger] No longer have app id. Attempting to find new one.
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"E1E146C0-8BD9-41C9-81EE-E4319866DAF1\",\n  \"value\" : {\n\n  },\n  \"status\" : 0\n}"
+[XCUITest] Setting '755' permissions to '/Users/Danilo.Policarpo/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [XCUITest] In a web session. Removing remote debugger
+[debug] [RemoteDebugger] Disconnecting from remote debugger
+[debug] [RemoteDebugger] Cleaning up listeners
+[debug] [iOSLog] Stopping iOS log capture
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509038487623 (15:21:27 GMT-0200 (-02))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/b5b030e5-50e7-4f00-a5a8-14d39c16bb29 200 441 ms - 76 
+[debug] [RemoteDebugger] Not connected to an application. Ignoring page load
+[debug] [iOS] New page listing is same as old, doing nothing
+[debug] [RemoteDebugger] Not connected to an application. Ignoring page load
+[debug] [iOS] New page listing is same as old, doing nothing
