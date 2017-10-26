@@ -837,3 +837,5 @@
 [debug] [iOS] New page listing is same as old, doing nothing
 [debug] [RemoteDebugger] Not connected to an application. Ignoring page load
 [debug] [iOS] New page listing is same as old, doing nothing
+[debug] [XCUITest] Log file for xcodebuild test: /Users/Danilo.Policarpo/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/D90BC555-1999-400C-83E3-E8961EAD12ED/Session-WebDriverAgentRunner-2017-10-26_152240-PpOdlV.log
+[XCUITest] xcodebuild exited with code '65' and signal 'null'
