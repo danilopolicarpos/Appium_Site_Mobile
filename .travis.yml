@@ -4,12 +4,9 @@ cache: bundler
 rvm:
   - 2.3
 
-before_script: 
+script: 
 - bundle install
 - bundle exec rake
-- bundle exec rake appium_server
-
-script:
 - bundle exec rake android
 
 language: android
@@ -30,6 +27,7 @@ android:
   - sys-img-x86-android-24
   
 before_script:
+  - bundle exec rake appium_server
   - android list avd
   - android create avd --force -n test -g android-24 --package "system-images;android-24;google_apis;x86_64" -g "google_apis" --abi "x86_64"
   - emulator -avd test -no-skin -no-audio -no-window &
