@@ -22,8 +22,7 @@ android:
   - extra-google-m2repository
   - sys-img-x86-android-24
 script:
-  - emulator -list-avds
-  - emulator -avd Nexus_5_API_23_mars -no-skin &
-  - android-wait-for-emulator
+  - android list avd
+
 after_success:
   - bash echo "Yata!"
