@@ -16,7 +16,9 @@ GEM
       selenium-webdriver (>= 3.0.4, <= 3.4)
       tomlrb (~> 1.1)
     awesome_print (1.7.0)
+    backports (3.10.3)
     bond (0.5.1)
+    builder (3.2.3)
     capybara (2.15.4)
       addressable
       mini_mime (>= 0.1.3)
@@ -29,12 +31,31 @@ GEM
     chronic_duration (0.10.6)
       numerizer (~> 0.1.1)
     coderay (1.1.1)
+    cucumber (3.0.1)
+      builder (>= 2.1.2)
+      cucumber-core (~> 3.0.0)
+      cucumber-expressions (~> 4.0.3)
+      cucumber-wire (~> 0.0.1)
+      diff-lcs (~> 1.3)
+      gherkin (~> 4.0)
+      multi_json (>= 1.7.5, < 2.0)
+      multi_test (>= 0.1.2)
+    cucumber-core (3.0.0)
+      backports (>= 3.8.0)
+      cucumber-tag_expressions (>= 1.0.1)
+      gherkin (>= 4.1.3)
+    cucumber-expressions (4.0.4)
+    cucumber-tag_expressions (1.0.1)
+    cucumber-wire (0.0.1)
     diff-lcs (1.3)
     ffi (1.9.18)
+    gherkin (4.1.3)
     json (2.1.0)
     method_source (0.8.2)
     mini_mime (0.1.4)
     mini_portile2 (2.1.0)
+    multi_json (1.12.2)
+    multi_test (0.1.2)
     nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     numerizer (0.1.1)
@@ -81,6 +102,7 @@ DEPENDENCIES
   appium_console
   appium_lib
   capybara
+  cucumber
   pry
   rake
   rspec
