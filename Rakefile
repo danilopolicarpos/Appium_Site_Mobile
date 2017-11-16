@@ -2,12 +2,16 @@ require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
 
+desc 'default test'
+task :default do
+  sh "rake --task"
+end
+
 desc 'Start server Appium'
 task :appium_server do
   puts 'iniciando server do appium'
   system 'nohup appium &'
 end
-
 
 desc 'Run test in Android'
 task :android do
