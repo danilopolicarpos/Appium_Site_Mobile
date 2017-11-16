@@ -5,8 +5,6 @@ rvm:
   - 2.3
 
 script: 
-- bundle install
-- bundle exec rake
 - bundle exec rake android
 
 language: android
@@ -27,6 +25,8 @@ android:
   - sys-img-x86-android-24
   
 before_script:
+  - bundle install
+  - bundle exec rake
   - bundle exec rake appium_server
   - android list avd
   - android create avd --force -n test -g android-24 --package "system-images;android-24;google_apis;x86_64" -g "google_apis" --abi "x86_64"
