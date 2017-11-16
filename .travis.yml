@@ -4,12 +4,12 @@ cache: bundler
 rvm:
   - 2.3
 
-script: 
+before_script: 
 - bundle install
 - bundle exec rake
 - bundle exec rake appium_server
 
-test:
+script:
 - bundle exec rake android
 
 language: android
