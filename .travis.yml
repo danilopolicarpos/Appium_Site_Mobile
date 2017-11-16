@@ -6,6 +6,7 @@ rvm:
 script: 
 - bundle install
 - bundle exec rake
+- bundle exec rake android
 
 language: android
 jdk: oraclejdk8
