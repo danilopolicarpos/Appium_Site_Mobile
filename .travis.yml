@@ -27,7 +27,7 @@ android:
   - sys-img-x86-android-24
   
 before_script:
-  - android create avd --force -n teste -g android-24 -p "system-images;android-24;google_apis;x86_64" -g "google_apis" --abi "x86_64"
+  - android create avd --force -n teste -g android-24 -p "system-images;android-24;google_apis;x86_64" -t "google_apis" --abi "x86_64"
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
