@@ -16,7 +16,7 @@ jdk: oraclejdk8
 env:
   global:
     - ANDROID_TARGET=android-24
-    - ANDROID_ABI=x86
+    - ANDROID_ABI=x86_64
     - ANDROID_TAG=google_apis
     
 
