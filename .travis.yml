@@ -4,7 +4,7 @@ cache: bundler
 rvm:
   - 2.3
 
-before_scritpt:
+before_script:
   - bundle install
   - bundle exec rake
   - bundle exec rake appium_server
@@ -30,7 +30,7 @@ android:
   
 before_script:
   - android list avd
-  - android create avd --force -n test -g android-24 --package "system-images;android-24;google_apis;x86_64" -g "google_apis" --abi "x86_64"
+  - android create avd --force -n test -g android-24 --package "system-images;android-24;google_apis;x86_64" -g "google_apis" 
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
