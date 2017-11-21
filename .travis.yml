@@ -1,29 +1,13 @@
 language: ruby
 sudo: required
-cache:
-  bundler: true
-  directories:
-  - node_modules
-  - /home/travis/.rvm/ 
-
-  install:
-  - bundle install --deployment
-  - npm install
-
 rvm:
   - 2.3
-
-script: 
-  - bundle install
-  - bundle exec rake
-  - rake android
 
 language: node_js
 node_js:
   - "v8.7.0"
   - "5.5.1"
  
-
 language: android
 jdk: oraclejdk8
 env:
@@ -36,10 +20,13 @@ before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 cache:
+  bundler: true
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
+    - node_modules
+    - /home/travis/.rvm/ 
 
 android:
   components:
@@ -50,7 +37,10 @@ android:
   - extra-android-m2repository
   - extra-google-m2repository
   - sys-img-armeabi-v7a-android-24
-  
+
+install:
+  - bundle install --deployment
+  - npm install 
   
 before_script:
 # create emulator
@@ -58,9 +48,11 @@ before_script:
   - emulator -avd test  -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
-  - npm install -g gulp
-  - npm install phantomjs
-  - npm install -g appium
+ 
+script: 
+  - bundle install
+  - bundle exec rake
+  - rake android
 
 after_success:
   - bash echo "Yata!"
