@@ -4,7 +4,7 @@ require 'cucumber/rake/task'
 
 desc 'default test'
 task :default do
-  sh "rake --task"
+  sh "rake --trace"
 end
 
 desc 'Start server Appium'
@@ -16,7 +16,7 @@ end
 
 desc 'Run test in Android'
 task :android do
-  sh "cucumber -p android"
+  sh "bundle exec cucumber -p android"
 end
 
 desc 'Run test in iOS'
