@@ -36,6 +36,9 @@ android:
   - extra-android-m2repository
   - extra-google-m2repository
   - sys-img-armeabi-v7a-android-24
+
+install:
+  - bundle install --deployment
   
 before_script:
   - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24"  --abi armeabi-v7a 
@@ -43,15 +46,9 @@ before_script:
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-  - nvm install 6
-  - npm install -g gulp
-  - npm install -g mocha
+  - nvm install 8
   - npm install
-
-install:
-  - bundle install --deployment
- 
- 
+  
 script: 
   - bundle exec rake
   - rake android
