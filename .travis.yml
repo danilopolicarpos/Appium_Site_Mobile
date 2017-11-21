@@ -65,8 +65,10 @@ language: node_js
 node_js:
   - "v8.7.0"
 
+before_install:
+   - "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
    
 install:
-    - install npm
-    - install node
+    - brew install npm
+    - brew install node
     - npm install -g appium
