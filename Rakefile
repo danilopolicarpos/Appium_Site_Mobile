@@ -2,13 +2,9 @@ require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
 
-desc 'default test'
-task :default do
-  sh "rake --trace"
-end
 
 desc 'Start server Appium'
-task :appium_server do
+task :default do
   puts 'iniciando server do appium'
   system 'nohup appium &'
   sleep(4)
