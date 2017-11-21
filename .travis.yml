@@ -16,7 +16,9 @@ script:
   - bundle exec rake
   - rake android
 
-
+language: node_js
+node_js:
+  - "v8.7.0"
 
 
 language: android
@@ -61,6 +63,3 @@ after_success:
 
 
 
-language: node_js
-node_js:
-  - "v8.7.0"
