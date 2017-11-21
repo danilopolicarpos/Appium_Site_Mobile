@@ -11,6 +11,7 @@ desc 'Start server Appium'
 task :appium_server do
   puts 'iniciando server do appium'
   system 'nohup appium &'
+  sleep(4)
 end
 
 desc 'Run test in Android'
