@@ -19,11 +19,10 @@ script:
 language: node_js
 node_js:
   - "v8.7.0"
-
-before_script:
-  - npm install -g gulp-cli
+  - "5.5.1"
+  
 script:
- - npm install -g appium
+  - npm install -g appium
 
 language: android
 jdk: oraclejdk8
