@@ -20,8 +20,7 @@ language: node_js
 node_js:
   - "v8.7.0"
 
-install:
- - install npm 
+script:
  - npm install -g appium
 
 language: android
