@@ -12,8 +12,12 @@ rvm:
   - 2.3
 
 script: 
+  - bundle install
   - bundle exec rake
   - rake android
+
+
+
 
 language: android
 jdk: oraclejdk8
@@ -44,6 +48,7 @@ android:
   
   
 before_script:
+# create emulator
   - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24"  --abi armeabi-v7a 
   - android list avd
   - emulator -avd test  -no-window &
@@ -52,3 +57,18 @@ before_script:
 
 after_success:
   - bash echo "Yata!"
+
+
+
+
+language: node_js
+node_js:
+  - "v8.7.0"
+
+before_install:
+   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   
+install:
+    - brew install npm
+    - brew install node
+    - npm install -g appium
