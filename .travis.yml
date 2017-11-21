@@ -40,7 +40,7 @@ android:
 
 install:
   - bundle install --deployment
-  - sudo apt-get npm install 
+  - sudo apt-get npm install --force-yes
   
 before_script:
   - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24"  --abi armeabi-v7a 
