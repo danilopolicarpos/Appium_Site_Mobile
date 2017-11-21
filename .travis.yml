@@ -20,8 +20,9 @@ language: node_js
 node_js:
   - "v8.7.0"
 
+before_script:
+  - npm install -g gulp-cli
 script:
- - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
  - npm install -g appium
 
 language: android
