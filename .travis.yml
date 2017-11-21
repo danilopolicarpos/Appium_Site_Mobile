@@ -8,8 +8,8 @@ rvm:
 script: 
   - bundle install
   - bundle exec rake
-  - bundle exec rake appium_server
-  - bundle exec rake android
+  - rake appium_server
+  - rake android
 
 language: android
 jdk: oraclejdk8
