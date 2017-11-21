@@ -12,7 +12,6 @@ rvm:
   - 2.3
 
 script: 
-  - npm install -g appium
   - bundle install
   - bundle exec rake
   - rake android
