@@ -16,7 +16,7 @@ jdk: oraclejdk8
 env:
   global:
     - ANDROID_TARGET=android-24
-    - ANDROID_ABI=x86
+    - ANDROID_ABI=armeabi-v7a
     - ANDROID_TAG=google_apis
     
 
@@ -28,11 +28,11 @@ android:
   - android-24
   - extra-android-m2repository
   - extra-google-m2repository
-  - sys-img-x86-google_apis-24
-  - intel-x86-emulator-accelerator-HAXM
+  - sys-img-armeabi-v7a-android-24
+  
   
 before_script:
-  - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24;google_apis;x86"  --abi "x86" --tag "google_apis"
+  - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24;google_apis;x86"  --abi "armeabi-v7a" --tag "google_apis"
   - android list avd
   - emulator -avd test  -no-window &
   - android-wait-for-emulator
