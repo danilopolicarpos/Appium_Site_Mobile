@@ -29,6 +29,7 @@ android:
   - extra-android-m2repository
   - extra-google-m2repository
   - sys-img-x86_64-google_apis-24
+  - intel-x86-emulator-accelerator(HAXM)
   
 before_script:
   - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24;google_apis;x86_64"  --abi "x86_64" --tag "google_apis"
