@@ -21,6 +21,7 @@ node_js:
   - "v8.7.0"
 
 script:
+ - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
  - npm install -g appium
 
 language: android
@@ -54,7 +55,6 @@ android:
 before_script:
 # create emulator
   - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24"  --abi armeabi-v7a 
-  - android list avd
   - emulator -avd test  -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
