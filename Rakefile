@@ -1,6 +1,5 @@
 require 'rubygems'
-
-
+require 'rake/testtask'
 
 desc 'Start server Appium'
 task :default do
