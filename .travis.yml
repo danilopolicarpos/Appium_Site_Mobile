@@ -20,9 +20,16 @@ language: node_js
 node_js:
   - "v8.7.0"
   - "5.5.1"
+
+before_script:
+  - npm install -g bower
+  - npm install -g gulp
+  - npm install phantomjs
+  - npm install -g appium
+  - bower install
   
 script:
-  - npm install -g appium
+
 
 language: android
 jdk: oraclejdk8
