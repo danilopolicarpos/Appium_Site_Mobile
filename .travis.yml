@@ -32,7 +32,7 @@ android:
   
   
 before_script:
-  - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24;google_apis;x86"  --abi "armeabi-v7a" --tag "google_apis"
+  - echo no | android create avd --force -n test --target "android-24" --path "system-images;android-24"  --abi armeabi-v7a 
   - android list avd
   - emulator -avd test  -no-window &
   - android-wait-for-emulator
