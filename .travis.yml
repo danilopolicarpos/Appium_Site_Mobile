@@ -1,13 +1,17 @@
 language: ruby
-cache: bundler
+cache:
+  bundler: true
+  directories:
+  - node_modules
+  - /home/travis/.rvm/ 
+
+  install:
+  - bundle install --deployment
 
 rvm:
   - 2.3
 
-
 script: 
-  - npm install -g appium
-  - bundle install
   - bundle exec rake
   - rake android
 
