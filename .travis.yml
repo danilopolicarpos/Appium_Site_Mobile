@@ -45,10 +45,7 @@ before_script:
   - emulator -avd test  -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
-  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
   - nvm install 8
-  - npm --version 
-  - node --version 
   - npm install -g appium 
   
 script: 

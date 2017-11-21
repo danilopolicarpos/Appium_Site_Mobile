@@ -1,6 +1,5 @@
 require 'rubygems'
-require 'cucumber'
-require 'cucumber/rake/task'
+
 
 
 desc 'Start server Appium'
