@@ -3,5 +3,5 @@ browserName = "Chrome"
 platformName = "Android"
 deviceName = 'test'
 platformVersion = '7.0'
-chromedriverExecutable = '/Users/Danilo.Policarpo/dev/site_mobile/build/chrome/chromedriver'
+chromedriverExecutable = './../../../site_mobile/build/chrome/chromedriver'
 chromedriverVersion = '2.23'
